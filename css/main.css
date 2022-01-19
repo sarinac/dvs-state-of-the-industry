@@ -1,0 +1,166 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,200;1,400&display=swap");
+
+html {
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+    text-align: left;
+}
+
+body {
+    background-color: #f4f1f2;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 0px;
+    color: #232232;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 0px;
+    color: #3d3d3b;
+}
+
+h3 {
+    font-size: 22px;
+    color: #3d3d3b;
+}
+
+p {
+    font-size: 1rem;
+    color: #3d3d3b;
+}
+
+text {
+    fill: #3d3d3b;
+}
+
+/* ----------------- Chart ----------------- */
+
+.org-text {
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.role-background {
+    opacity: 50%;
+    stroke: #95a876;
+    stroke-width: 0.2px;
+}
+
+
+.centrality, .bar path {
+    opacity: 80%;
+    stroke-width: 0.5px;
+}
+.primary-True, .primary {
+    fill: #f2de84;
+    stroke: #a59548;
+}
+.primary-False, .secondary {
+    fill: #dcc0ba;
+    stroke: #90726b;
+}
+
+.hidden {
+    visibility: hidden;
+}
+/* ----------------- Grid ----------------- */
+
+.nodes {
+    fill: #dca672;
+}
+.nodes-outline {
+    fill: none;
+    stroke: #3d3d3b;
+    stroke-width: 1px;
+}
+
+.link {
+    stroke: #dca672;
+    stroke-width: 2px;
+    stroke-linecap: round;
+    fill: none;
+}
+
+.link-circle {
+    fill: #dca672;
+    stroke: #3d3d3b;
+    stroke-width: 0.5px;
+}
+.gridline {
+    stroke: #3d3d3b;
+    stroke-width: 0.8px;
+    stroke-linecap: round;
+}
+
+.axis {
+    stroke: #3d3d3b;
+    stroke-width: 1px;
+    stroke-linecap: round;
+    opacity: 40%;
+    stroke-dasharray: 5;
+}
+
+.axis-text {
+    fill: #3d3d3b;
+    text-anchor: start;
+    font-style: italic;
+    opacity: 40%;
+    font-size: 9px;
+}
+.axis-title {
+    fill: #3d3d3b;
+    text-anchor: middle;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+/* ----------------- Text ----------------- */
+
+.nodes-outline-text {
+    text-anchor: middle;
+    alignment-baseline: middle;
+    font-size: 7px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.role-title {
+    text-anchor: middle;
+    alignment-baseline: middle;
+    font-size: 8px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.text {
+    text-anchor: middle;
+    alignment-baseline: middle;
+}
+
+.org .grid .text {
+    font-size: 11px;
+    alignment-baseline: hanging;
+}
+
+.total .text {
+    text-anchor: start;
+}
+
+.role-total {
+    text-anchor: middle;
+    font-size: 10px;
+    font-weight: bold;
+    fill: #95a876;
+    stroke: #f4f1f2;
+    stroke-linecap: round;
+    stroke-width: 2px;
+    paint-order: stroke fill;
+}
