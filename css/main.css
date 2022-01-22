@@ -22,7 +22,8 @@ h1 {
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 12px;
+    font-style: italic;
     margin-bottom: 0px;
     color: #3d3d3b;
 }
@@ -30,15 +31,67 @@ h2 {
 h3 {
     font-size: 22px;
     color: #3d3d3b;
+    margin-bottom: 5px;
 }
 
-p {
-    font-size: 1rem;
+p,
+li {
+    font-size: 16px;
     color: #3d3d3b;
 }
 
 text {
     fill: #3d3d3b;
+}
+
+a {
+    color: #59697f;
+}
+
+ol {
+    margin: 0;
+}
+
+/* ----------------- Layout ----------------- */
+
+.container {
+    margin: 0 auto;
+    width: 1000px;
+}
+.horizontal {
+    display: flex;
+    flex-direction: row;
+}
+.description {
+    padding-bottom: 10%;
+    border-bottom: dashed 1px #59697f;
+    border-top: dashed 1px #59697f;
+    padding: 20px 0px;
+}
+.vertical {
+    display: flex;
+    flex-direction: column;
+}
+
+.button {
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    width: 160px;
+    margin-top: 10px;
+    padding: 8px 8px 8px 8px;
+    color: #333333;
+    margin-right: 5px;
+    font-size: 12px;
+}
+.button1 {
+    background-color: #dcc0ba;
+    border: 1px solid #90726b;
+}
+
+.button2 {
+    background-color: #f2de84;
+    border: 1px solid #a59548;
 }
 
 /* ----------------- Chart ----------------- */
@@ -54,16 +107,18 @@ text {
     stroke-width: 0.2px;
 }
 
-
-.centrality, .bar path {
+.centrality,
+.bar path {
     opacity: 80%;
     stroke-width: 0.5px;
 }
-.primary-True, .primary {
+.primary-True,
+.primary {
     fill: #f2de84;
     stroke: #a59548;
 }
-.primary-False, .secondary {
+.primary-False,
+.secondary {
     fill: #dcc0ba;
     stroke: #90726b;
 }

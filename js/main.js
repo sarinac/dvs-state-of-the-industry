@@ -2,10 +2,10 @@
 ///////////////////////// Dimensions & Scales /////////////////////////
 ///////////////////////////////////////////////////////////////////////
 
-const pageWidth = 800,
+const pageWidth = 1000,
     pageHeight = 1000,
     rolePadding = 40,
-    pagePadding = 100;
+    pagePadding = 50;
 const yRoleOffset = 300;
 const radiusOrg = 140;
 
@@ -111,8 +111,9 @@ setGradient = () => {
 };
 
 createRoles = (data) => {
+
     // Set placement for role groups
-    gRole = svg
+    gRole = svg.append("g")
         .selectAll("g")
         .data(data)
         .enter()

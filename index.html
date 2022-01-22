@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <title>DVS | How long have I worked?</title>
+        <title>DVS | Are there coworkers like me?</title>
         <link href="css/main.css" rel="stylesheet" type="text/css" />
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script
@@ -19,16 +19,143 @@
         </script>
     </head>
     <body>
-        <!-- Header -->
-        <h1>DVS</h1>
-        <p>Placeholder for text</p>
-        <!-- Chart -->
-        <div id="chart">
-            <!-- <div id="tooltip" class="hidden">
-			<p>Placeholder for tooltip if I decide to make one...</p>
-		    </div> -->
+        <div class="container">
+            <!-- Header -->
+            <h1>Are there coworkers like me?</h1>
+            <h2>
+                Insights from the Data Visualization: State of the Industry
+                Survey 2021 conducted by the
+                <a href="https://www.datavisualizationsociety.org/"
+                    >Data Visualization Society</a
+                >
+            </h2>
+            <p>
+                This year 2,181 people responded to the survey with their
+                demographics, occupation, tools, data visualization focus, time
+                spent, and frustrations. The full survey is
+                <a
+                    href="https://docs.google.com/spreadsheets/d/1lDkxioTmT5--JufJuYryiV5fKsdQQopvlSJO4Gh0ors/edit#gid=1462100456"
+                    >here.</a
+                >
+            </p>
+            <p>
+                Since pandemic, people have been
+                <a
+                    href="https://www.nbcnews.com/specials/changed-careers-during-covid/"
+                    >switching jobs</a
+                >
+                to accomodate their change in routine, living situation, or life
+                priorities. Whether it be in-person or remote, onboarding in a
+                less social environment could feel pretty lonely. It's difficult
+                to meet new people with similar interests. I used this survey
+                data to compare people in the workplace and identify groups of
+                people that have similar roles, years of experience, and
+                industry.
+            </p>
+            <div class="horizontal description">
+                <div class="vertical" style="width: 70%">
+                    <h3>Who is in this data?</h3>
+                    <p>
+                        1,560 of those respondents work as an
+                        <strong>employee</strong>. The chart below uses survey
+                        data from those who answered all of the following
+                        questions:
+                    </p>
+                    <ol>
+                        <li>
+                            <p>
+                                In which sectors does your organization operate?
+                            </p>
+                        </li>
+                        <li>
+                            <p>What are your roles at your organization?</p>
+                        </li>
+                        <li>
+                            <p>
+                                About how many years of professional experience
+                                do you have?
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                How much of your work at your organization
+                                involves data visualization?
+                            </p>
+                        </li>
+                    </ol>
+                    <h3>Where do I fit in?</h3>
+                    
+                    <p>
+                        <strong>It might be easy to find others if...</strong>
+                    </p>
+                    <ul>
+                        <li>
+                            You have between 5-10 years of work experience.
+                            Maybe more if you're a manager... ;)
+                        </li>
+                        <li>
+                            You're an analyst or manager who does some data
+                            visualization.
+                        </li>
+                        <li>
+                            You're an engineer working for the IT or private
+                            industry.
+                        </li>
+                        <li>
+                            You work for a public company. You're likely an
+                            analyst.
+                        </li>
+                    </ul>
+                    <p>
+                        <strong>It might be hard to find others if...</strong>
+                    </p>
+                    <ul>
+                        <li>
+                            You have over 25 years of work experience. You're
+                            probably a manager.
+                        </li>
+                        <li>
+                            You're a designer not in the IT or private sector.
+                        </li>
+                        <li>
+                            You work in business functions doing data
+                            visualizations as your focus. You can share ideas
+                            with designers, journalists, and engineers!
+                        </li>
+                        <li>
+                            You're a young journalist, but an artsy and
+                            data-driven one.
+                        </li>
+                    </ul>
+                    <p style="color: #dca672;">
+                        <em>For example... I work in the IT/private sector while roles in analytics
+                        and engineering. I have 4 years of experience and
+                        supplement my work with data visualization.</em>
+                    </p>
+                    <div class="horizontal">
+                    <a
+                        class="button button1"
+                        href="https://github.com/sarinac/dvs-state-of-the-industry"
+                        >See my GitHub</a
+                    >
+                    <a class="button button2" href="https://ifcolorful.com"
+                        >Click if you're like me!</a
+                    >
+                </div>
+                </div>
+                <img
+                    src="img/soti-legend.svg"
+                    style="width: 30%; padding: 30px"
+                />
+            </div>
+            <!-- Chart -->
+            <div id="chart">
+            </div>
+            <div style="padding: 10px">
+                <p style="text-align: center;">Drawn by <a href="https://ifcolorful.com">Sarina Chen</a></p>
+            </div>
+            
         </div>
-
         <!-- Scripts -->
         <script src="https://d3js.org/d3.v7.min.js"></script>
         <script src="js/main.js"></script>
